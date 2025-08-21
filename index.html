@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROCK'N DRILL — Drill. Pray. Love.</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Навбар -->
+  <header class="header">
+    <div class="flex items-center gap-3">
+      <img src="img/logo2.png" alt="Rock'n Drill Logo" class="h-12 w-auto" />
+      <span class="text-2xl font-bold">ROCK'N DRILL</span>
+    </div>
+    <nav class="flex gap-6 text-lg">
+      <a href="#about" class="nav-link">О нас</a>
+      <a href="#services" class="nav-link">Услуги</a>
+      <a href="#contact" class="nav-link">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero parallax">
+    <div class="hero-content animate-fadeIn">
+      <img src="img/logo2.png" alt="Rock'n Drill" class="w-48 mb-8 mx-auto animate-bounce-slow" />
+      <h1 class="title">ROCK'N DRILL</h1>
+      <p class="subtitle mt-6">DRILL. PRAY. LOVE.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section bg-gray-800 fade-in fade-in-left">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="section-title">Наши услуги</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div class="service-card">⚡ Электрика</div>
+        <div class="service-card">🔩 Механика</div>
+        <div class="service-card">🚰 Сантехника</div>
+        <div class="service-card">🧱 Бетонные работы</div>
+        <div class="service-card">🔥 Сварка</div>
+        <div class="service-card">🎨 Отделка</div>
+        <div class="service-card">🏠 Ремонт помещений</div>
+        <div class="service-card">🛠️ Обслуживание</div>
+        <div class="service-card">📦 Монтаж оборудования</div>
+        <div class="service-card">🪚 Деревянные работы</div>
+        <div class="service-card">🚧 Демонтаж</div>
+        <div class="service-card">🔧 Сборка конструкций</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section bg-gray-700 fade-in fade-in-right">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="section-title">О нас</h2>
+      <p class="text-lg text-gray-300 leading-relaxed">
+        Мы — команда мастеров, готовых решать любые задачи: от ремонта и монтажа до масштабных строительных проектов. Работаем быстро, надёжно и с вниманием к деталям.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section bg-gray-800 fade-in fade-in-left">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="section-title">Связаться с нами</h2>
+      <form class="grid grid-cols-1 gap-6">
+        <input type="text" placeholder="Ваше имя" class="form-input" required>
+        <input type="tel" placeholder="Телефон" class="form-input" required>
+        <textarea placeholder="Опишите задачу" rows="5" class="form-input"></textarea>
+        <button class="btn-primary">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> ROCK'N DRILL. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
